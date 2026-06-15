@@ -4,12 +4,12 @@ Ce module contient une routine permettant d'exécuter plusieurs
 coroutines en même temps (en concurrence).
 """
 import asyncio
-import random
+from typing import List
 
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-async def wait_n(n: int, max_delay: int = 10) -> list[float]:
+async def wait_n(n: int, max_delay: int = 10) -> List[float]:
     """
     Exécute wait_random 'n' fois avec le 'max_delay' spécifié.
 
