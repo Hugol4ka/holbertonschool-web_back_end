@@ -7,6 +7,7 @@ import asyncio
 
 wait_random = __import__('0-basic_async_syntax').wait_random
 
+
 def task_wait_random(max_delay: int) -> asyncio.Task:
     """
     Prend un entier max_delay et renvoie une asyncio.Task
